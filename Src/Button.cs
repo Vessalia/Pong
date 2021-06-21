@@ -19,7 +19,7 @@ namespace Pong
 
         private readonly string text;
 
-        private Action action;
+        private readonly Action action;
 
         public Button(Vector2 pos, Color colour, string text, Action action)
         {
@@ -63,11 +63,6 @@ namespace Pong
         public void SetPressed(bool wasPressed)
         {
             this.wasPressed = wasPressed;
-        }
-
-        public Color GetColour()
-        {
-            return colour;
         }
 
         public void SetColour(Color colour)

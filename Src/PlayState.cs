@@ -22,7 +22,7 @@ namespace Pong
         private int playerScore;
         private float timer;
 
-        public PlayState(GameStateSwitcher switcher) : base(switcher)
+        public PlayState(IGameStateSwitcher switcher) : base(switcher)
         {
             paddleWidth = 20;
             int paddleHeight = 200;

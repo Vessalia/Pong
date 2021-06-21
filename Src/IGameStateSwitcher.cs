@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Pong
 {
-    public interface GameStateSwitcher
+    public interface IGameStateSwitcher
     {
         public void SetNextState(GameState gameState);
     }

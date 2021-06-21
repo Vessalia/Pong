@@ -9,10 +9,10 @@ namespace Pong
 {
     class PauseState : GameState
     {
-        private Menu menu;
-        private PlayState playState;
+        private readonly Menu menu;
+        private readonly PlayState playState;
 
-        public PauseState(GameStateSwitcher switcher, PlayState playState) : base(switcher)
+        public PauseState(IGameStateSwitcher switcher, PlayState playState) : base(switcher)
         {
             menu = new Menu();
 
@@ -49,10 +49,7 @@ namespace Pong
             menu.HandleButtonInput();
         }
 
-        public override void Update(float timeStep)
-        {
-
-        }
+        public override void Update(float timeStep) { }
 
         public override void DrawToScreen(SpriteBatch sb, SpriteFont font)
         {

@@ -9,7 +9,7 @@ namespace Pong
 {
     public class Menu
     {
-        private List<Button> buttons;
+        private readonly List<Button> buttons;
 
         public Menu()
         {
@@ -35,7 +35,6 @@ namespace Pong
         {
             foreach (var b in buttons)
             {
-                Color colour = b.GetColour();
                 if (b.MouseButtonCheck())
                 {
                     b.SetColour(Color.Red);

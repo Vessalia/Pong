@@ -7,9 +7,9 @@ namespace Pong
 {
     public abstract class GameState
     {
-        protected GameStateSwitcher switcher;
+        protected IGameStateSwitcher switcher;
 
-        public GameState(GameStateSwitcher switcher)
+        public GameState(IGameStateSwitcher switcher)
         {
             this.switcher = switcher;
         }

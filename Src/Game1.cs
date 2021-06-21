@@ -6,9 +6,9 @@ using System;
 
 namespace Pong
 {
-    public class Game1 : Game, GameStateSwitcher
+    public class Game1 : Game, IGameStateSwitcher
     {
-        GameState gameState;
+        private GameState gameState;
 
         private readonly GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
